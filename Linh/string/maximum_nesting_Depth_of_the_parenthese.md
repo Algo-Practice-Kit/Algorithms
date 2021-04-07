@@ -24,5 +24,38 @@
 - Output: 0
 
 ## Approach and Solution
+### Approach:
+- Initialize the `maxDepth =0`
+- Initialize the `currentDepth =0`
+- Iterate the input string with a for loop
+  - Keep track of the current Depth
+    - meet a `open bracket` => increase `currentDepth` by 1
+    - meet a `close bracket` => decrease `currentDepth` by 1
+- Finish looping => return maxDepth
 
+### Solution:
+```js
+function depth(str){
+  let open= '(';
+  let closed=')';
+  let maxDepth =0
+  let currDepth=0
+  for(let i=0; i< str.length; ++i){
+    let char= str[i];
+    if(char=== open){
+      currDepth++;
+    } else if(char=== closed) {
+      maxDepth= Math.max(currDepth, maxDepth)
+      currDepth--;
 
+    }
+
+  }
+
+  return maxDepth;
+}
+
+let s2= "(1+(2*3)+((8)/4))+1"
+let result = depth(s2)
+console.log(result)
+```
