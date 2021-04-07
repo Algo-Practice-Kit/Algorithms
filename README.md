@@ -25,7 +25,7 @@ I highly recommend using markdown to write down cause I think it is really easy 
     - Action : simple tense verb : add , fix , ...
     - Field: field name: array/ string ...
     - Illustate your work
- Example:
+    - Example:
   `add(array): two number sum`
 
 ## Many more
