@@ -1,4 +1,4 @@
-# Contains Duplicates 1 & 2
+# Contains Duplicates 1 (Bonus Follow Up)
 
 ---
 
@@ -44,7 +44,14 @@ Output: true
 ## Solution
 
 ```
-Will add
+function containsDuplicate (nums) {
+    let key={};
+  for(let i=0; i<nums.length; ++i){
+      if(key[nums[i]]) return true;
+      else key[nums[i]] = true;
+  }
+    return false;
+};
 ```
 
 ## Time and Space Complexity
@@ -58,7 +65,7 @@ Will add
 
 ---
 
-# Contains Duplicates 2 (confusing wording)
+# Contains Duplicates 2
 
 ## Extra Resources
 
@@ -109,8 +116,5 @@ Will add
 ## Time and Space Complexity
 
 **Time**
-0(n)
--worst case if you have to loop to the last number in the array
+
 **Space**
-0(n)
--worst case if you have to store every number in the object
