@@ -1,5 +1,9 @@
 # Contains Duplicates 1 & 2
 
+---
+
+# Contains Duplicates 1
+
 ## Extra Resources
 
 From Leetcode=>
