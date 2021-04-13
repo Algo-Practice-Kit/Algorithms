@@ -9,9 +9,9 @@ Read more: https://www.java67.com/2017/07/string-rotation-in-java-write-program.
 
 ## Prompt
 
-Write a program to check if two given String s1 and s2 are rotations of another.
+Write a program to check if two given strings (string and rotated) are rotations of another.
 _For example_
-if s1 = "IndiaUSAEngland" and s2= "USAEnglandIndia" then your program should return true but if s2="IndiaEnglandUSA" then it should return false.
+if string = "IndiaUSAEngland" and rotated= "USAEnglandIndia" then your program should return true but if rotated="IndiaEnglandUSA" then it should return false.
 
 ## Extra Information
 
@@ -21,22 +21,29 @@ if s1 = "IndiaUSAEngland" and s2= "USAEnglandIndia" then your program should ret
 
 ```
 let string= 'IndiaVsAustralia'
-let rotation= 'AustraliaVsIndia'
+let rotated= 'AustraliaVsIndia'
 Output: false
 ```
 
 ```
 let string= 'IndiaVsEngland'
-let rotation= 'EnglandIndiaVs'
+let rotated= 'EnglandIndiaVs'
 Output: true
 ```
 
-### Approach/Hint
+### Approach/Hints
+
+-We know again rotated must be a rotation of string meaning that while the order of the letters can be different they must be in the same sequence (cannot be randomly scrambled).
 
 ## Solution
 
 ```
+function isRotation(string, rotated){
 
+
+
+
+}
 ```
 
 ## Time and Space Complexity
