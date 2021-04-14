@@ -1,6 +1,6 @@
 # String Rotation
 
-## Resources
+### Resources
 
 https://www.pcoroneos.com/cracking-the-code-interview-1-9-string-rotation
 
@@ -9,50 +9,53 @@ Read more: https://www.java67.com/2017/07/string-rotation-in-java-write-program.
 
 ## Prompt
 
-Write a program to check if two given strings (string and rotated) are rotations of another.
+Write a function to check if two given strings (str and rotatedStr) are rotations of another.
 _For example_
-if string = "IndiaUSAEngland" and rotated= "USAEnglandIndia" then your program should return true but if rotated="IndiaEnglandUSA" then it should return false.
+if str = "IndiaUSAEngland" and rotatedStr= "USAEnglandIndia" then your program should return true but if rotatedStr="IndiaEnglandUSA" then it should return false.
 
-## Extra Information
-
-- For the purpose of this program, you can assume that Strings are rotated on the right side, but you should ask this question to your interviewer before jumping into the solution.
-
-## Examples
+### Examples
 
 ```
-let string= 'IndiaVsAustralia'
-let rotated= 'AustraliaVsIndia'
+let str= 'IndiaVsAustralia'
+let rotatedStr= 'AustraliaVsIndia'
 Output: false
 ```
 
 ```
-let string= 'IndiaVsEngland'
-let rotated= 'EnglandIndiaVs'
+let str= 'IndiaVsEngland'
+let rotatedStr= 'VsEnglandIndia
 Output: true
 ```
 
-### Approach/Hints
+## Approach/Hints
 
--We know again rotated must be a rotation of string meaning that while the order of the letters can be different they must be in the same sequence (cannot be randomly scrambled).
+- While the order of the letters can be different they must be in the same sequence (cannot be randomly scrambled).
+
+- You are allowed to use .includes()!
+
+- For the purpose of this function, you can assume that strings are rotated to the right side, but you should ask this question to your interviewer before jumping into the solution.
 
 ## Solution
 
+I like this question because it's a good example of thinking out of the box. Because the answer is a _boolean, you can use includes, AND don't need to keep track of indices_, the simplest solution is to concat the string to itself. Then check if the rotated string is within that string.
+
 ```
-function isRotation(string, rotated){
-
-
-
-
-}
+// function isRotation(string, rotated){
+// let compare= string + string;
+// if(compare.includes(rotated)) return true;
+// return false;
+// };
 ```
 
 ## Time and Space Complexity
 
+I couldn't find the BigO but I assume...
 **Time**
-
+O(n) because includes is searching the string behind the scenes
 **Space**
+O(n) because you are doubling and storing the sting length
 
-## Follow Up Questions
+### Follow Up Questions
 
 (In Java)
 There are a couple of variants of this program that many interviewers ask as follow-ups e.g. how do you solve the problem if strings are rotated on the left side, or can you check if two strings are the rotation of another without using String concatenation. You can try solving those versions by yourself, but if you want to look for a solution, you can check it below.
