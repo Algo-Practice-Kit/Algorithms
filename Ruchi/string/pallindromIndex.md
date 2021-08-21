@@ -1,3 +1,7 @@
+# Put the prompt here =>
+
+## Here is the code =>
+
 ```js
 function palindromeIndex(s) {
   let left = 0;
@@ -29,5 +33,5 @@ function palindromeIndex(s) {
 }
 
 palindromeIndex("bcbc");
-//palindromeIndex("abcdefghihgfeddcba");
+// palindromeIndex("abcdefghihgfeddcba");
 ```
