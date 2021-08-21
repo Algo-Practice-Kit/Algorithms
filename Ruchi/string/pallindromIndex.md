@@ -29,5 +29,5 @@ function palindromeIndex(s) {
 }
 
 palindromeIndex("bcbc");
-//palindromeIndex("abcdefghihgfeddcba");
+palindromeIndex("abcdefghihgfeddcba");
 ```
