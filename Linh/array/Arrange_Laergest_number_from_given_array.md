@@ -20,6 +20,8 @@ Output: "1"
 Input: nums = [10]
 Output: "10"
 #### Approach
+Explain: https://replit.com/@LinhVu020490/laergestNumber#index.js
+
 - First, we convert each integer to a string. Then, we sort the array of strings.
 
 - Once the array is sorted, the most "signficant" number will be at the front. There is a minor edge case that comes up when the array consists of only zeroes, so if the most significant number is 00, we can simply return 00. Otherwise, we build a string out of the sorted array and return it
